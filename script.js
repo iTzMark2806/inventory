@@ -30,8 +30,9 @@ if (loginForm) {
       return;
     }
     showError("");
-    // TODO: send credentials to your backend here
+    // TODO: send credentials to your backend here and only continue if they are valid
     console.log("Log-in submitted:", { username });
+    window.location.href = "dashboard.html";
   });
 }
 
@@ -59,5 +60,6 @@ if (signinForm) {
     showError("");
     // TODO: send sign-up data to your backend here
     console.log("Sign-in submitted:", { email });
+    window.location.href = "login.html";
   });
 }
