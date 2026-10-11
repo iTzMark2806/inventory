@@ -26,7 +26,7 @@ a { color: inherit; text-decoration: none; }
   background-color: var(--bg);
   background-image:
     linear-gradient(rgba(255, 246, 211, 0.82), rgba(255, 246, 211, 0.82)),
-    url("images/velmorabg.png");
+    url("img/velmorabg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,13 +40,7 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 40px;
 }
 
-.site-header .logo { display: flex; align-items: center; }
-.site-header .logo img { height: 64px; width: auto; display: block; }
-
-/* Shown only if images/velmora.png can't be loaded */
-.logo .wordmark { display: none; font-size: 1.7rem; font-weight: 700; color: var(--olive-dark); }
-.logo.no-img img { display: none; }
-.logo.no-img .wordmark { display: inline; }
+.site-header .logo img { height: 142px; width: auto; display: block; }
 
 .site-nav { display: flex; align-items: center; gap: 22px; font-size: 0.95rem; }
 
