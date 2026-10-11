@@ -26,7 +26,7 @@ a { color: inherit; text-decoration: none; }
   background-color: var(--bg);
   background-image:
     linear-gradient(rgba(255, 246, 211, 0.82), rgba(255, 246, 211, 0.82)),
-    url("velmorabg.png");
+    url("img/velmorabg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,16 +40,11 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 40px;
 }
 
-.site-header .logo no-img {
-  height: 76px;
-  width: auto;
-  display: block;
-  font-size: 0;
-  color: transparent;
-}
+.site-header .logo img { height: 142px; width: auto; display: block; }
+
+.site-nav { display: flex; align-items: center; gap: 22px; font-size: 0.95rem; }
 
 .site-nav a.link:hover { text-decoration: underline; }
-
 
 /* ---------- Buttons ---------- */
 .btn {
