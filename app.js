@@ -273,9 +273,6 @@
   const ROUTES = {};
   NAV.forEach((g) => g.items.forEach((i) => (ROUTES[i.id] = i)));
 
-  /* =====================================================================
-     Data (saved in this browser's localStorage)
-     ===================================================================== */
   const STORE = "inventory_db_v2";
   try { localStorage.removeItem("inventory_db_v1"); } catch (e) { /* ignore */ }
 
@@ -467,7 +464,7 @@
           "</div>" +
         "</div>" +
         '<h2 style="padding:0 0 6px;margin-top:22px">Data</h2>' +
-        '<p class="muted" style="font-size:.82rem;margin-bottom:12px">Records are stored in this browser. Erasing removes every record and history, and all pages start empty again.</p>' +
+        '<p class="muted" style="font-size:.82rem;margin-bottom:12px">Erasing data removes every record and history, and all pages start empty again.</p>' +
         '<button class="btn ghost" data-act="reset"><span class="material-icons">delete_forever</span>Erase all data</button>' +
       "</div>";
     paintAvatar($("#avatarPreview"));
