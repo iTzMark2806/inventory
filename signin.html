@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+
+      <!-- Logo: images/velmora.png (click to go back to the landing page) -->
+      <a class="logo" href="index.html"><img src="velmora.png" alt="Velmora" /></a>
+
+      <div class="form-wrap wide">
+        <h1>Sign-in</h1>
+        <p class="subtitle" style="margin-bottom: 18px;">Welcome to the team! Please sign in to continue.</p>
+
+        <form id="signinForm" novalidate>
+          <label for="email">Enter your Email</label>
+          <div class="field">
+            <span class="material-icons icon-left">person</span>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+
+          <label for="password">Enter your Password</label>
+          <div class="field">
+            <span class="material-icons icon-left">vpn_key</span>
+            <input type="password" id="password" name="password" autocomplete="new-password" required />
+            <button type="button" class="toggle-pw" aria-label="Show password" aria-pressed="false" data-target="password">
+              <span class="material-icons icon-off">visibility_off</span>
+              <span class="material-icons icon-on">visibility</span>
+            </button>
+          </div>
+
+          <label for="confirm">Confirm Password</label>
+          <div class="field" style="margin-bottom: 14px;">
+            <span class="material-icons icon-left">vpn_key</span>
+            <input type="password" id="confirm" name="confirm" autocomplete="new-password" required />
+            <button type="button" class="toggle-pw" aria-label="Show password" aria-pressed="false" data-target="confirm">
+              <span class="material-icons icon-off">visibility_off</span>
+              <span class="material-icons icon-on">visibility</span>
+            </button>
+          </div>
+
+          <p class="error" id="formError"></p>
+
+          <button type="submit" class="btn">Sign-in</button>
+        </form>
+
+        <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </section>
+
+    <!-- PHOTO PLACEHOLDER: put your living-room photo at images/living-room.jpg -->
+    <section class="photo">
+      <img src="velmorabg.png" alt="" />
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
