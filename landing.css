@@ -40,7 +40,13 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 40px;
 }
 
+.site-header .logo { display: flex; align-items: center; }
 .site-header .logo img { height: 64px; width: auto; display: block; }
+
+/* Shown only if images/velmora.png can't be loaded */
+.logo .wordmark { display: none; font-size: 1.7rem; font-weight: 700; color: var(--olive-dark); }
+.logo.no-img img { display: none; }
+.logo.no-img .wordmark { display: inline; }
 
 .site-nav { display: flex; align-items: center; gap: 22px; font-size: 0.95rem; }
 
