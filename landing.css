@@ -26,7 +26,7 @@ a { color: inherit; text-decoration: none; }
   background-color: var(--bg);
   background-image:
     linear-gradient(rgba(255, 246, 211, 0.82), rgba(255, 246, 211, 0.82)),
-    url("velmorabg.png");
+    url("velmora.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
